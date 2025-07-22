@@ -107,13 +107,20 @@ git clone <path to your chatbot .git>
 cd agentic-rag-chatbot
 ```
 
-## 2. Install Python dependencies
+## 2. Create & activate venv
+
+```bash
+python -m venv <env_name>
+venv\Scripts\activate
+```
+
+## 3. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3. Add your API keys in `.env`
+## 4. Add your API keys in `.env`
 
 ```bash
 GROQ_API_KEY=<your_groq_key>
@@ -121,7 +128,7 @@ CHUNK_SIZE=<your_chunk_size>
 CHUNK_OVERLAP=<your_chunk_overlap>
 ```
 
-## 4. Launch the chatbot
+## 5. Launch the chatbot
 
 ```bash
 streamlit run ui/app.py
@@ -162,6 +169,6 @@ Key highlights:
 - **MCP-based architecture** for structured communication between agents.  
 - **Semantic vector retrieval** using sentence-transformer embeddings and FAISS.  
 - **LLM response generation** with top-k document grounding.  
-- **Developer-friendly and modular** — easy to plug in different embedding models or LLMs.
+- **Developer-friendly and modular** - easy to plug in different embedding models or LLMs.
 
 
